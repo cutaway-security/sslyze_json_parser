@@ -24,7 +24,7 @@ optional arguments:
 ### Example
 
 ```
-CounterHack 2019-11-25 16:47:58
+CutSec 2019-11-25 16:47:58
 > ./sslyze_target_list.py -t -c sslyze_10.111.222.32-27_open_20191122.json
 
 ### Target List ###
