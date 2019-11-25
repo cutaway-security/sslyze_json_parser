@@ -74,6 +74,7 @@ None
 ## TODO
 List of things that still need some work.
 
+* Need a LOT more JSON test cases to process.
 * JSON output from the different vulnerability categories needs to be understood better to process effectively.
 * Need a better list of bad cert values to generate target lists.
 * Output report verbiage (issue and recommendation) that can be imported into reports.
