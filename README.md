@@ -1,4 +1,4 @@
-# sslyze_json_parser
+# SSLyze JSON Parser
 Parse JSON files produced by [sslyze](https://github.com/nabla-c0d3/sslyze) tool to print lists of servers with specific issues.
 
 ## Usage
