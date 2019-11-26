@@ -43,8 +43,8 @@ except:
 #########################
 # List servers and ports in scan
 #########################
-print("\n### Target List ###")
 if args.target_list:
+    print("\n### Target List ###")
     for e in d['accepted_targets']:
         print('%s:%s'%(e['server_info']['hostname'],e['server_info']['port']))
 
@@ -59,7 +59,7 @@ cipher_list = [
     "tlsv1_2",
     "tlsv1_2"
 ]
-min_cipher_index  = 3
+min_cipher_index  = 4
 min_cipher_bitcnt = 128
 weak_cert_list = {}
 
@@ -130,8 +130,8 @@ for e in d['accepted_targets']:
             vuln_list['robot'] = [server_name]
 
 # Print cert results
-print("\n### Certificate Issue List ###")
 if args.cert_check:
+    print("\n### Certificate Issue List ###")
     for e in weak_cert_list.keys():
         # Family.Cert.BitLength
         print("%s%s"%(tab*0,e))
@@ -139,8 +139,8 @@ if args.cert_check:
         print("%s%s\n"%(tab*1,','.join(weak_cert_list[e])))
 
 # Print vuln results
-print("\n### Vulnerability Issue List ###")
 if args.vuln_check:
+    print("\n### Vulnerability Issue List ###")
     for e in vuln_list.keys():
         # Vuln Family
         print("%s%s"%(tab*0,vuln_test_list_names[e]))
